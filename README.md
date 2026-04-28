@@ -36,3 +36,19 @@ dotnet build
 ```bash
 dotnet test
 ```
+
+## Usage
+
+With pipe:
+
+```bash
+echo "6 1 5 9 2" | dotnet run --project LongestIncreasingSubsequence.Cli
+# Output: 1 5 9
+```
+
+With args:
+
+```bash
+dotnet run --project LongestIncreasingSubsequence.Cli -- 6 1 5 9 2
+# Output: 1 5 9
+```
