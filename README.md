@@ -61,3 +61,25 @@ With args:
 dotnet run --project LongestIncreasingSubsequence.Cli -- 6 1 5 9 2
 # Output: 1 5 9
 ```
+
+## Docker
+
+Build the image:
+
+```bash
+docker build -t lis .
+```
+
+Run with pipe:
+
+```bash
+echo "6 1 5 9 2" | docker run --rm -i lis
+# Output: 1 5 9
+```
+
+Run with args:
+
+```bash
+docker run --rm lis 6 1 5 9 2
+# Output: 1 5 9
+```
