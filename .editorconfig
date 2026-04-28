@@ -1,0 +1,37 @@
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+indent_size = 4
+csharp_new_line_before_open_brace = all
+csharp_prefer_braces = true:warning
+
+dotnet_sort_system_directives_first = true
+dotnet_style_qualification_for_field = false:warning
+dotnet_style_qualification_for_property = false:warning
+dotnet_style_qualification_for_method = false:warning
+
+dotnet_diagnostic.IDE0005.severity = warning
+dotnet_diagnostic.IDE0051.severity = warning
+
+dotnet_naming_rule.private_fields_should_be_underscore_camel.severity = suggestion
+dotnet_naming_rule.private_fields_should_be_underscore_camel.symbols = private_fields
+dotnet_naming_rule.private_fields_should_be_underscore_camel.style = underscore_camel
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.underscore_camel.required_prefix = _
+dotnet_naming_style.underscore_camel.capitalization = camel_case
+
+[*.{json,yml,yaml,csproj,props}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
