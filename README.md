@@ -1,5 +1,8 @@
 # Longest Increasing Subsequence (LIS)
 
+[![.NET](https://github.com/Lei-Y/10736c14-7ffa-4688-89d6-d45eb6ea0aaf/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Lei-Y/10736c14-7ffa-4688-89d6-d45eb6ea0aaf/actions/workflows/dotnet.yml)
+[![codecov](https://codecov.io/github/Lei-Y/10736c14-7ffa-4688-89d6-d45eb6ea0aaf/graph/badge.svg?token=W6A3U5BO3Z)](https://codecov.io/github/Lei-Y/10736c14-7ffa-4688-89d6-d45eb6ea0aaf)
+
 ## Overview
 This project finds the longest increasing subsequence from a string of integers separated by spaces.
 
@@ -35,6 +38,12 @@ dotnet build
 
 ```bash
 dotnet test
+```
+
+## Coverage
+
+```bash
+dotnet test --collect:"XPlat Code Coverage"
 ```
 
 ## Usage
