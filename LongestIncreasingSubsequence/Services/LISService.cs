@@ -24,11 +24,6 @@ namespace LongestIncreasingSubsequence.Services
 
         private string GetLongestIncreasingRun(int[] input)
         {
-            if (input.Length == 0)
-            {
-                return string.Empty;
-            }
-
             if (input.Length == 1)
             {
                 return input[0].ToString();
